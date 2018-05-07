@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Title</title>
+    <style type="text/css">
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        /* menuBar */
+        #related .menuBar {
+            padding: 0 18px;
+            width: 100%;
+            height: 39px;
+            border-bottom: 1px solid #EBEBEB;
+
+        }
+        #related .menuBar .slideBar {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+
+            height: 100%;
+            overflow-x: scroll;
+            overflow-y: hidden;
+        }
+        #related .menuBar .slideBar span {
+            width: auto;
+            float: left;
+            display: block;
+            padding-right: 25px;
+            font-size: 16px;
+            color: #333333;
+            letter-spacing: 0;
+            line-height: 39px;
+        }
+        /* guess */
+        #related .guess {
+            position: relative;
+            display: flex;
+            justify-content: flex-start;
+            padding: 15px 18px;
+            width: 100%;
+            height: 144px;
+            border-bottom: 1px solid #EBEBEB;
+            box-sizing: border-box;
+        }
+        #related .guess .bigImg {
+            display: inline-block;
+            margin-right: 10px;
+            min-width: 110px;
+            height: 82px;
+            background-color: #EBEBEB;
+        }
+        #related .guess .mainContent{
+            width: auto;
+        }
+        #related .guess .mainContent .greyTag {
+            padding: 2.5px 8px;
+            font-size: 11px;
+            color: #666666;
+            letter-spacing: 0;
+            text-align: center;
+            line-height: 11px;
+            background-color: #EBEBEB;
+            border-radius: 2px;
+        }
+        #related .guess .mainContent p {
+            display: -webkit-box;
+            margin: 12.5px 0 15px;
+            width: auto;
+            height: 15px;
+            font-size: 14px;
+            color: #333;
+            letter-spacing: 0;
+            line-height: 15px;
+            overflow : hidden;
+            text-overflow: ellipsis;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+        }
+        #related .guess .mainContent .author {
+            display: -webkit-box;
+            margin: 0;
+            width: auto;
+            height: 13px;
+            font-size: 12px;
+            color: #666;
+            letter-spacing: 0;
+            line-height: 12px;
+            overflow : hidden;
+            text-overflow: ellipsis;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+        }
+        #related .guess .mainContent .date {
+            display: block;
+            margin: 7px 0 0 0;
+            width: auto;
+            height: 13px;
+            font-size: 11px;
+            color: #999;
+            letter-spacing: 0;
+            line-height: 12px;
+        }
+        #related .guess .bottomPart {
+            position: absolute;
+            left: 0px;
+            bottom: 15px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        #related .guess .bottomPart .tag {
+            padding: 2px 10px;
+            margin-left: 18px;
+            background: rgba(255,151,59,0.20);
+            border-radius: 2px;
+            font-size: 11px;
+            color: #FF973B;
+            letter-spacing: 0;
+        }
+        #related .guess .bottomPart .close {
+            position: absolute;
+            bottom: 1px;
+            right: 18px;
+            width: 27px;
+            height: 15px;
+        }
+        /* hottest */
+        #related .hottest {
+            position: relative;
+            display: flex;
+            justify-content: flex-start;
+            padding: 15px 18px;
+            width: 100%;
+            height: 169px;
+            border-bottom: 1px solid #EBEBEB;
+            box-sizing: border-box;
+        }
+        #related .hottest .bigImg {
+            display: inline-block;
+            margin-right: 10px;
+            min-width: 110px;
+            height: 82px;
+            background-color: #EBEBEB;
+        }
+        #related .hottest .mainContent{
+            width: auto;
+        }
+        #related .hottest .mainContent .greyTag {
+            padding: 2.5px 8px;
+            font-size: 11px;
+            color: #666666;
+            letter-spacing: 0;
+            text-align: center;
+            line-height: 11px;
+            background-color: #EBEBEB;
+            border-radius: 2px;
+        }
+        #related .hottest .mainContent p {
+            display: -webkit-box;
+            margin: 12.5px 0 15px;
+            width: auto;
+            height: 15px;
+            font-size: 14px;
+            color: #333;
+            letter-spacing: 0;
+            line-height: 15px;
+            overflow : hidden;
+            text-overflow: ellipsis;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+        }
+        #related .hottest .mainContent .author {
+            display: -webkit-box;
+            margin: 0;
+            width: auto;
+            height: 26px;
+            font-size: 12px;
+            color: #666;
+            letter-spacing: 0;
+            line-height: 12px;
+            overflow : hidden;
+            text-overflow: ellipsis;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+        }
+        #related .hottest .mainContent .date {
+            display: block;
+            margin: 7px 0 0 0;
+            width: auto;
+            height: 13px;
+            font-size: 11px;
+            color: #999;
+            letter-spacing: 0;
+            line-height: 12px;
+        }
+        #related .hottest .bottomPart {
+            position: absolute;
+            left: 0px;
+            bottom: 15px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        #related .hottest .bottomPart .tag {
+            padding: 2px 10px;
+            margin-left: 18px;
+            background: rgba(255,151,59,0.20);
+            border-radius: 2px;
+            font-size: 11px;
+            color: #FF973B;
+            letter-spacing: 0;
+        }
+        #related .hottest .bottomPart .close {
+            position: absolute;
+            bottom: 1px;
+            right: 18px;
+            width: 27px;
+            height: 15px;
+        }
+        /* ads */
+        #related .ads {
+            display: block;
+            padding: 15px 18px;
+            width: 100%;
+            height: 170px;
+            border-bottom: 1px solid #EBEBEB;
+            box-sizing: border-box;
+        }
+        #related .ads img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            background-color: #EBEBEB;
+        }
+        /* transfer */
+        #related .transfer {
+            display: flex;
+            padding: 15px 18px;
+            height: 95px;
+            border-bottom: 1px solid #EBEBEB;
+        }
+        #related .transfer .author {
+            width: 50px;
+        }
+        #related .transfer .author .headImg {
+            display: block;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #EBEBEB;
+        }
+        #related .transfer .author .name {
+            margin-top: 5px;
+            width: 50px;
+            font-size: 12px;
+            color: #5881B2;
+            letter-spacing: 0;
+            text-align: center;
+            line-height: 13px;
+        }
+        #related .transfer .author .company {
+            margin-top: 3px;
+            width: 50px;
+            font-size: 12px;
+            color: #333;
+            letter-spacing: 0;
+            text-align: center;
+            line-height: 13px;
+        }
+        #related .transfer .midBorder {
+            margin: 0 20px 0 15px;
+            height: 100%;
+            border-right: 1px solid #EBEBEB;
+        }
+        /* report */
+        #related .report {
+            display: block;
+            padding: 15px 18px;
+            height: 118px;
+            border-bottom: 1px solid #EBEBEB;
+        }
+        #related .report p {
+            display: -webkit-box;
+            margin: 0 0 15px 0;
+            width: 100%;
+            height: 40px;
+            font-size: 14px;
+            color: #050505;
+            letter-spacing: 0;
+            line-height: 20px;
+            overflow : hidden;
+            text-overflow: ellipsis;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+        }
+        #related .report .tag {
+            font-size: 12px;
+            color: #666666;
+            letter-spacing: 0;
+            line-height: 13px;
+        }
+        #related .report .date {
+            display: block;
+            margin-top: 7px;
+            font-size: 11px;
+            color: #4A4A4A;
+            letter-spacing: 0;
+            line-height: 11px;
+        }
+        #related .report .date .tags {
+            margin-left: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div id="related">
+        <div class="menuBar">
+            <div class="slideBar">
+                <span>推荐</span>
+                <span>调仓</span>
+                <span>研报</span>
+                <span>金点评</span>
+                <span>电话会议</span>
+                <span>活动</span>
+                <span>推荐</span>
+                <span>调仓</span>
+                <span>研报</span>
+                <span>金点评</span>
+                <span>电话会议</span>
+                <span>活动</span>
+            </div>
+        </div>
+
+        <!--/* guess */-->
+        <div class="guess">
+            <img class="bigImg" src="" alt="">
+            <div class="mainContent">
+                <span class="greyTag">国防军工</span>
+                <span class="greyTag">房地产</span>
+                <span class="greyTag">电子</span>
+                <p>「光大证券」金界控股调研2018「光大证券」金界控股调研2018…</p>
+                <span class="author">晏溶、陈诚、龚伟、韩如意、张一兰、晏溶、陈诚、龚伟、韩如意、张一兰…</span>
+                <span class="date">2018/01/03 11:38</span>
+            </div>
+            <div class="bottomPart">
+                <span class="tag">
+                    近期热点
+                </span>
+                <img class="close" src="./close.png" alt="close">
+            </div>
+        </div>
+
+        <!--/* hottest */-->
+        <div class="hottest">
+            <img class="bigImg" src="" alt="">
+            <div class="mainContent">
+                <span class="greyTag">国防军工</span>
+                <span class="greyTag">房地产</span>
+                <span class="greyTag">电子</span>
+                <p>「光大证券」金界控股调研2018「光大证券」金界控股调研2018…</p>
+                <span class="author">晏溶、陈诚、龚伟、韩如意、张一兰、晏溶、陈诚、龚伟、韩如意、张一兰…</span>
+                <span class="date">2018/01/03 11:38</span>
+            </div>
+            <div class="bottomPart">
+                <span class="tag">
+                    近期热点
+                </span>
+                <img  class="close"  src="./close.png" alt="close">
+            </div>
+        </div>
+
+        <!--/* ads */-->
+        <div class="ads">
+            <img src="" alt="">
+        </div>
+
+        <!--/* Transfer  */-->
+        <div class="transfer">
+            <div class="author">
+                <img class="headImg" src="" alt="">
+                <div class="name">小张震</div>
+                <div class="company">光大证券</div>
+            </div>
+            <div class="midBorder">
+
+            </div>
+        </div>
+
+        <!--/* report  */-->
+        <div class="report">
+            <p>「中泰服饰」歌力思 | 年报点评：业绩超预期，主品牌恢复增长、EdHardy爆发难挡》「中泰服饰」歌力思 | 年报点评：业绩超预期，主品牌恢复增长、EdHardy爆发难挡》</p>
+            <span class="tag">相关股票</span><span class="tag">&nbsp;|&nbsp;</span><span class="tag">歌力思</span>
+            <span class="date">18/03/30  16:40 <span class="tags">评级</span><span>&nbsp;|&nbsp;</span><span>买入</span></span>
+        </div>
+    </div>
+
+</body>
+</html>
