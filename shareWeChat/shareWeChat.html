@@ -30,28 +30,33 @@
             border-bottom: 1px solid #EBEBEB;
             box-sizing: border-box;
         }
-        #shareWeChat .tel .telIcon {
+        #shareWeChat .tel #telIcon {
             width: 15px;
             height: 20px;
         }
-        #shareWeChat .tel .telInput {
+        #shareWeChat .tel #telInput {
             padding: 0 21px;
             height: 20px;
             border: none;
+            outline: none;
+            font-size: 15px;
+            color: #333333;
+            letter-spacing: 0;
+            line-height: 20px;
         }
-        #shareWeChat .tel .telInput::-webkit-input-placeholder {
+        #shareWeChat .tel #telInput::-webkit-input-placeholder {
             font-size: 15px;
             color: #999;
         }
-        #shareWeChat .tel .telInput::-moz-placeholder {   /* Mozilla Firefox 19+ */
+        #shareWeChat .tel #telInput::-moz-placeholder {   /* Mozilla Firefox 19+ */
             font-size: 15px;
             color: #999;
         }
-        #shareWeChat .tel .telInput:-moz-placeholder {    /* Mozilla Firefox 4 to 18 */
+        #shareWeChat .tel #telInput:-moz-placeholder {    /* Mozilla Firefox 4 to 18 */
             font-size: 15px;
             color: #999;
         }
-        #shareWeChat .tel .telInput:-ms-input-placeholder {  /* Internet Explorer 10-11 */
+        #shareWeChat .tel #telInput:-ms-input-placeholder {  /* Internet Explorer 10-11 */
             font-size: 15px;
             color: #999;
         }
@@ -76,28 +81,33 @@
             border-bottom: 1px solid #EBEBEB;
             box-sizing: border-box;
         }
-        #shareWeChat .psw .pswIcon {
+        #shareWeChat .psw #pswIcon {
             width: 15px;
             height: 20px;
         }
-        #shareWeChat .psw .pswInput {
+        #shareWeChat .psw #pswInput {
             padding: 0 21px;
             height: 20px;
             border: none;
+            outline: none;
+            font-size: 15px;
+            color: #333333;
+            letter-spacing: 0;
+            line-height: 20px;
         }
-        #shareWeChat .psw .pswInput::-webkit-input-placeholder {
+        #shareWeChat .psw #pswInput::-webkit-input-placeholder {
             font-size: 15px;
             color: #999;
         }
-        #shareWeChat .psw .pswInput::-moz-placeholder {   /* Mozilla Firefox 19+ */
+        #shareWeChat .psw #pswInput::-moz-placeholder {   /* Mozilla Firefox 19+ */
             font-size: 15px;
             color: #999;
         }
-        #shareWeChat .psw .pswInput:-moz-placeholder {    /* Mozilla Firefox 4 to 18 */
+        #shareWeChat .psw #pswInput:-moz-placeholder {    /* Mozilla Firefox 4 to 18 */
             font-size: 15px;
             color: #999;
         }
-        #shareWeChat .psw .pswInput:-ms-input-placeholder {  /* Internet Explorer 10-11 */
+        #shareWeChat .psw #pswInput:-ms-input-placeholder {  /* Internet Explorer 10-11 */
             font-size: 15px;
             color: #999;
         }
@@ -105,7 +115,7 @@
             width: 10px;
             text-align: right;
         }
-        #shareWeChat .psw .getCode .code  {
+        #shareWeChat .psw .getCode #code  {
             position: absolute;
             bottom: 16px;
             right: 18px;
@@ -146,25 +156,64 @@
         </p>
 
         <div class="tel">
-            <img class="telIcon" src="telGrey.png" alt="tel">
-            <input class="telInput" type="text" placeholder="请输入手机号">
+            <img id="telIcon" src="telGrey.png" alt="tel">
+            <input id="telInput" type="text" placeholder="请输入手机号" onchange="didTel()">
             <div class="clear">
-                <img class="clearIcon" src="clear.png" alt="clear">
+                <img class="clearIcon" src="clear.png" alt="clear" onclick="clearTel()">
             </div>
         </div>
 
         <div class="psw">
-            <img class="pswIcon" src="pswGrey.png" alt="tel">
-            <input class="pswInput" type="password" placeholder="请输入验证码">
+            <img id="pswIcon" src="pswGrey.png" alt="tel">
+            <input id="pswInput" type="text" placeholder="请输入验证码" onchange="didPsw()">
             <div class="getCode">
-                <span class="code">获取动态密码</span>
+                <span id="code" onclick="getCode()">获取动态密码</span>
             </div>
         </div>
 
         <div class="submitButton">
-            <button>提交</button>
+            <button onclick="">提交</button>
         </div>
 
     </div>
+    <script>
+        function didTel() {
+            if ( document.getElementById("telInput").value.replace(/(^\s*)|(\s*$)/g, "") !== "" ) {
+                  document.getElementById("telIcon").src = "telRed.png";
+            } else {
+                document.getElementById("telIcon").src = "telGrey.png";
+            }
+        }
+
+        function clearTel() {
+            document.getElementById("telInput").value = "";
+            document.getElementById("telIcon").src = "telGrey.png";
+        }
+
+        function didPsw() {
+            if ( document.getElementById("pswInput").value.replace(/(^\s*)|(\s*$)/g, "") !== "" ) {
+                document.getElementById("pswIcon").src = "pswRed.png";
+            } else {
+                document.getElementById("pswIcon").src = "pswGrey.png";
+            }
+        }
+
+        function getCode() {
+            if (document.getElementById("code").innerText === "获取动态密码") {
+                let time = 60;
+                let timeCount = setInterval(function () {
+                    time -= 1;
+                    document.getElementById("code").innerText = `${time}s后重新获取`;
+                    if (time === 0) {
+                        clearInterval(timeCount);
+                        document.getElementById("code").innerText = "获取动态密码";
+                    }
+                }, 1000);
+
+
+            }
+
+        }
+    </script>
 </body>
 </html>

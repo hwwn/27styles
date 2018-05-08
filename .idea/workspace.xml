@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83f88dbe-87be-4e30-a41e-befef8840018" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/shareWeChat/clear.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shareWeChat/pswGrey.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shareWeChat/pswRed.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shareWeChat/shareWeChat.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shareWeChat/telGrey.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shareWeChat/telRed.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/close.png" beforeDir="false" afterPath="$PROJECT_DIR$/guanlian/close.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comments.html" beforeDir="false" afterPath="$PROJECT_DIR$/comments/comments.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guanlian.html" beforeDir="false" afterPath="$PROJECT_DIR$/guanlian/guanlian.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shareWeChat/shareWeChat.html" beforeDir="false" afterPath="$PROJECT_DIR$/shareWeChat/shareWeChat.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -24,7 +15,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.50586855">
+    <splitter split-orientation="horizontal" split-proportion="0.5052817">
       <split-first>
         <leaf>
           <file leaf-file-name="comments.html" pinned="false" current-in-tab="false">
@@ -58,8 +49,8 @@
           <file leaf-file-name="shareWeChat.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/shareWeChat/shareWeChat.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="156">
-                  <caret line="104" column="24" lean-forward="true" selection-start-line="104" selection-start-column="24" selection-end-line="104" selection-end-column="24" />
+                <state relative-caret-position="550">
+                  <caret line="202" column="29" selection-start-line="202" selection-start-column="29" selection-end-line="202" selection-end-column="29" />
                 </state>
               </provider>
             </entry>
@@ -74,6 +65,18 @@
         <option value="HTML File" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>telInput</find>
+      <find>code</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>#telInput</replace>
+      <replace>#telIcon</replace>
+      <replace>#pswIcon</replace>
+      <replace>#pswInput</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -116,6 +119,11 @@
             <path>
               <item name="27styles" type="b2602c69:ProjectViewProjectNode" />
               <item name="27styles" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="27styles" type="b2602c69:ProjectViewProjectNode" />
+              <item name="27styles" type="462c0819:PsiDirectoryNode" />
+              <item name="shareWeChat" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -165,12 +173,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1525670627960</updated>
-      <workItem from="1525670629349" duration="20333000" />
+      <workItem from="1525670629349" duration="24623000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20333000" />
+    <option name="totallyTimeSpent" value="24623000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -224,8 +232,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/shareWeChat/shareWeChat.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="104" column="24" lean-forward="true" selection-start-line="104" selection-start-column="24" selection-end-line="104" selection-end-column="24" />
+        <state relative-caret-position="550">
+          <caret line="202" column="29" selection-start-line="202" selection-start-column="29" selection-end-line="202" selection-end-column="29" />
         </state>
       </provider>
     </entry>
