@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Title</title>
+    <style type="text/css">
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        #shareWeChat .describe {
+            margin: 0;
+            padding: 20px 30px 30px;
+            font-size: 15px;
+            color: #333333;
+            letter-spacing: 1px;
+            text-align: justify;
+            line-height: 20px;
+        }
+
+        /* tel input */
+        #shareWeChat .tel {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            height: 36px;
+            padding: 0 30px 15px;
+            border-bottom: 1px solid #EBEBEB;
+            box-sizing: border-box;
+        }
+        #shareWeChat .tel .telIcon {
+            width: 15px;
+            height: 20px;
+        }
+        #shareWeChat .tel .telInput {
+            padding: 0 21px;
+            height: 20px;
+            border: none;
+        }
+        #shareWeChat .tel .telInput::-webkit-input-placeholder {
+            font-size: 15px;
+            color: #999;
+        }
+        #shareWeChat .tel .telInput::-moz-placeholder {   /* Mozilla Firefox 19+ */
+            font-size: 15px;
+            color: #999;
+        }
+        #shareWeChat .tel .telInput:-moz-placeholder {    /* Mozilla Firefox 4 to 18 */
+            font-size: 15px;
+            color: #999;
+        }
+        #shareWeChat .tel .telInput:-ms-input-placeholder {  /* Internet Explorer 10-11 */
+            font-size: 15px;
+            color: #999;
+        }
+        #shareWeChat .tel .clear {
+            width: auto;
+            text-align: right;
+        }
+        #shareWeChat .tel .clearIcon {
+            width: 10px;
+            height: 10px;
+        }
+
+        /* psw input*/
+        #shareWeChat .psw {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            height: 51px;
+            padding: 15px 30px;
+            border-bottom: 1px solid #EBEBEB;
+            box-sizing: border-box;
+        }
+        #shareWeChat .psw .pswIcon {
+            width: 15px;
+            height: 20px;
+        }
+        #shareWeChat .psw .pswInput {
+            padding: 0 21px;
+            height: 20px;
+            border: none;
+        }
+        #shareWeChat .psw .pswInput::-webkit-input-placeholder {
+            font-size: 15px;
+            color: #999;
+        }
+        #shareWeChat .psw .pswInput::-moz-placeholder {   /* Mozilla Firefox 19+ */
+            font-size: 15px;
+            color: #999;
+        }
+        #shareWeChat .psw .pswInput:-moz-placeholder {    /* Mozilla Firefox 4 to 18 */
+            font-size: 15px;
+            color: #999;
+        }
+        #shareWeChat .psw .pswInput:-ms-input-placeholder {  /* Internet Explorer 10-11 */
+            font-size: 15px;
+            color: #999;
+        }
+        #shareWeChat .psw .getCode {
+            width: 10px;
+            text-align: right;
+        }
+        #shareWeChat .psw .getCode .code  {
+            position: absolute;
+            bottom: 16px;
+            right: 18px;
+            font-size: 12px;
+            color: #5881B2;
+            letter-spacing: 0;
+            text-align: center;
+            line-height: 17px;
+        }
+
+        /* submit button */
+        #shareWeChat .submitButton {
+            padding: 40px 18px;
+            width: 100%;
+            height: 115px;
+            box-sizing: border-box;
+        }
+
+        #shareWeChat .submitButton button {
+            width: 100%;
+            height: 100%;
+            font-size: 15px;
+            color: #FFF;
+            letter-spacing: 0;
+            text-align: center;
+            line-height: 16px;
+            border: none;
+            border-radius: 5px;
+            background: #A50014;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="shareWeChat">
+        <p class="describe">
+            内容仅对机构投研人员开放，请登录或注册验证您的身份，加入每市投研圈，享受更多优质投研服务内容。
+        </p>
+
+        <div class="tel">
+            <img class="telIcon" src="telGrey.png" alt="tel">
+            <input class="telInput" type="text" placeholder="请输入手机号">
+            <div class="clear">
+                <img class="clearIcon" src="clear.png" alt="clear">
+            </div>
+        </div>
+
+        <div class="psw">
+            <img class="pswIcon" src="pswGrey.png" alt="tel">
+            <input class="pswInput" type="password" placeholder="请输入验证码">
+            <div class="getCode">
+                <span class="code">获取动态密码</span>
+            </div>
+        </div>
+
+        <div class="submitButton">
+            <button>提交</button>
+        </div>
+
+    </div>
+</body>
+</html>

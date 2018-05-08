@@ -2,9 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83f88dbe-87be-4e30-a41e-befef8840018" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/close.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/guanlian.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shareWeChat/clear.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shareWeChat/pswGrey.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shareWeChat/pswRed.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shareWeChat/shareWeChat.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shareWeChat/telGrey.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shareWeChat/telRed.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/close.png" beforeDir="false" afterPath="$PROJECT_DIR$/guanlian/close.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comments.html" beforeDir="false" afterPath="$PROJECT_DIR$/comments/comments.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guanlian.html" beforeDir="false" afterPath="$PROJECT_DIR$/guanlian/guanlian.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -17,11 +24,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.4403778">
+    <splitter split-orientation="horizontal" split-proportion="0.50586855">
       <split-first>
         <leaf>
           <file leaf-file-name="comments.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/comments.html">
+            <entry file="file://$PROJECT_DIR$/comments/comments.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="141">
                   <caret line="108" column="32" lean-forward="true" selection-start-line="108" selection-start-column="32" selection-end-line="108" selection-end-column="32" />
@@ -30,10 +37,10 @@
             </entry>
           </file>
           <file leaf-file-name="guanlian.html" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/guanlian.html">
+            <entry file="file://$PROJECT_DIR$/guanlian/guanlian.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="560">
-                  <caret line="273" column="28" selection-start-line="273" selection-start-column="28" selection-end-line="273" selection-end-column="28" />
+                <state relative-caret-position="246">
+                  <caret line="366" column="36" lean-forward="true" selection-start-line="366" selection-start-column="36" selection-end-line="366" selection-end-column="36" />
                   <folding>
                     <element signature="e#10399#10405#0" expanded="true" />
                     <element signature="e#10406#10412#0" expanded="true" />
@@ -48,17 +55,11 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="guanlian.html" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/guanlian.html">
+          <file leaf-file-name="shareWeChat.html" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/shareWeChat/shareWeChat.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="651">
-                  <caret line="386" column="33" selection-start-line="386" selection-start-column="24" selection-end-line="386" selection-end-column="33" />
-                  <folding>
-                    <element signature="e#10399#10405#0" expanded="true" />
-                    <element signature="e#10406#10412#0" expanded="true" />
-                    <element signature="e#10930#10936#0" expanded="true" />
-                    <element signature="e#10937#10943#0" expanded="true" />
-                  </folding>
+                <state relative-caret-position="156">
+                  <caret line="104" column="24" lean-forward="true" selection-start-line="104" selection-start-column="24" selection-end-line="104" selection-end-column="24" />
                 </state>
               </provider>
             </entry>
@@ -82,6 +83,9 @@
       <list>
         <option value="$PROJECT_DIR$/comments.html" />
         <option value="$PROJECT_DIR$/guanlian.html" />
+        <option value="$PROJECT_DIR$/shareWechat.html" />
+        <option value="$PROJECT_DIR$/shareWeChat.html" />
+        <option value="$PROJECT_DIR$/shareWeChat/shareWeChat.html" />
       </list>
     </option>
   </component>
@@ -130,6 +134,11 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\hwwn\Desktop\27styles\guanlian" />
+      <recent name="C:\Users\hwwn\Desktop\27styles\comments" />
+      <recent name="C:\Users\hwwn\Desktop\27styles\shareWeChat" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\hwwn\Desktop\27styles" />
     </key>
@@ -156,18 +165,18 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1525670627960</updated>
-      <workItem from="1525670629349" duration="13901000" />
+      <workItem from="1525670629349" duration="20333000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13901000" />
+    <option name="totallyTimeSpent" value="20333000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.10701107" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.101739585" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
@@ -193,23 +202,30 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/comments.html">
+    <entry file="file://$PROJECT_DIR$/comments/comments.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="141">
           <caret line="108" column="32" lean-forward="true" selection-start-line="108" selection-start-column="32" selection-end-line="108" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/guanlian.html">
+    <entry file="file://$PROJECT_DIR$/guanlian/guanlian.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="273" column="28" selection-start-line="273" selection-start-column="28" selection-end-line="273" selection-end-column="28" />
+        <state relative-caret-position="246">
+          <caret line="366" column="36" lean-forward="true" selection-start-line="366" selection-start-column="36" selection-end-line="366" selection-end-column="36" />
           <folding>
             <element signature="e#10399#10405#0" expanded="true" />
             <element signature="e#10406#10412#0" expanded="true" />
             <element signature="e#10930#10936#0" expanded="true" />
             <element signature="e#10937#10943#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shareWeChat/shareWeChat.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="104" column="24" lean-forward="true" selection-start-line="104" selection-start-column="24" selection-end-line="104" selection-end-column="24" />
         </state>
       </provider>
     </entry>
