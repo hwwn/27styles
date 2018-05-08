@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Title</title>
+    <style type="text/css">
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        #writeComment {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 0 22px;
+            background-color: rgba(0,0,0,0.70);
+            z-index: 999;
+        }
+        #writeComment #commentWindow {
+            width: 100%;
+            border-radius: 10px;
+            background: white;
+        }
+        #writeComment #commentWindow .closeWindow {
+            padding: 15px 15px 15px 0;
+            width: 100%;
+            height: 15px;
+            text-align: right;
+            box-sizing: border-box;
+        }
+        #writeComment #commentWindow .closeWindow #closeButton {
+            height: 15px;
+        }
+        #writeComment #commentWindow .windowTitle {
+            display: block;
+            padding-top: 15px;
+            font-size: 16px;
+            color: #333333;
+            letter-spacing: 0;
+            text-align: center;
+            line-height: 20px;
+        }
+        #writeComment #commentWindow .mainPart {
+            padding: 15px 35px 25px;
+        }
+
+        #writeComment #commentWindow #starBar {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: 23px;
+        }
+        #writeComment #commentWindow #starBar .starImg {
+            margin-right: 13px;
+            width: 23px;
+            height: 23px;
+        }
+        #writeComment #commentWindow #starBar .starImg:last-child {
+            margin-right: 0;
+        }
+        #writeComment #commentWindow #starBar  #note {
+            font-size: 16px;
+            color: #999;
+            letter-spacing: 0;
+            line-height: 23px;
+            text-align: center;
+        }
+        #writeComment #commentWindow #redComment {
+            display: block;
+            margin: 10px 0 25px;
+            width: 100%;
+            font-size: 12px;
+            color: #A50014;
+            letter-spacing: 0;
+            text-align: center;
+            line-height: 12px;
+            text-align: center;
+        }
+        #writeComment #commentWindow #tags {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        #writeComment #commentWindow #tags .tag {
+            margin-bottom: 15px;
+            width: 105px;
+            height: 33px;
+            border: 1px solid #999;
+            border-radius: 2px;
+            font-size: 14px;
+            color: #333;
+            letter-spacing: 0;
+            line-height: 33px;
+            text-align: center;
+        }
+        #writeComment #commentWindow #commentArea {
+            margin-top: 15px;
+            padding: 8px 10px;
+            width: 100%;
+            height: 58px;
+            border: 1px solid #999999;
+            border-radius: 2px;
+            overflow: scroll;
+            resize: none;
+            box-sizing: border-box;
+        }
+        #writeComment #commentWindow #commentArea::-webkit-input-placeholder {
+            font-size: 10px;
+            color: #999;
+            ine-height: 11px;
+        }
+        #writeComment #commentWindow #commentArea::-moz-placeholder {   /* Mozilla Firefox 19+ */
+            font-size: 10px;
+            color: #999;
+            line-height: 11px;
+        }
+        #writeComment #commentWindow #commentArea:-moz-placeholder {    /* Mozilla Firefox 4 to 18 */
+            font-size: 10px;
+            color: #999;
+            line-height: 11px;
+        }
+        #writeComment #commentWindow #commentArea:-ms-input-placeholder {  /* Internet Explorer 10-11 */
+            font-size: 10px;
+            color: #999;
+            line-height: 11px;
+        }
+        #writeComment #commentWindow .anonymous {
+            display: flex;
+            margin: 5px 0 30px;
+            width: 100%;
+            height: 14px;
+        }
+        #writeComment #commentWindow .anonymous #selectButton {
+            margin-right: 8px;
+            width: 15px;
+        }
+        #writeComment #commentWindow .anonymous .selectLabel {
+            font-size: 12px;
+            color: #333333;
+            letter-spacing: 0;
+            line-height: 14px;
+        }
+        /* submit button */
+        #writeComment #commentWindow  .submitButton {
+            padding: 0;
+            width: 100%;
+            height: 30px;
+            box-sizing: border-box;
+        }
+
+        #writeComment #commentWindow  .submitButton button {
+            width: 100%;
+            height: 100%;
+            font-size: 15px;
+            color: #FFF;
+            letter-spacing: 0;
+            text-align: center;
+            line-height: 16px;
+            border: none;
+            border-radius: 5px;
+            outline: none;
+            background: #A50014;
+        }
+
+        .selectedTag {
+            border: 1px solid #EBEBEB;
+            border-radius: 2px;
+            background: #EBEBEB;
+            font-size: 14px;
+            color: #333;
+            letter-spacing: 0;
+            line-height: 33px;
+            text-align: center;
+        }
+        .hidden {
+            display: none!important;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="showCommentWin()">评 价</button>
+
+    <div id="writeComment" class="">
+        <div id="commentWindow">
+            <div class="closeWindow">
+                <img id="closeButton" src="closeWindow.png" alt="closeWindow" onclick="hideCommentWin()">
+            </div>
+
+            <span class="windowTitle">研究员很看重您的宝贵意见哦</span>
+
+            <div class="mainPart">
+                <div id="starBar">
+                    <img class="starImg" src="starYellow.png" alt="starOne">
+                    <img class="starImg" src="starYellow.png" alt="starTwo">
+                    <img class="starImg" src="starYellow.png" alt="starThree">
+                    <img class="starImg" src="starYellow.png" alt="starFour">
+                    <img class="starImg" src="starYellow.png" alt="starFive">
+                    <span id="note">10分</span>
+                </div>
+
+                <span id="redComment">非常满意，无可挑剔</span>
+
+                <div id="tags" onclick="chooseTags()">
+                    <div id="tagOne" class="tag">信息活动及时</div>
+                    <div id="tagTwo" class="tag">交流畅顺</div>
+                    <div id="tagThree" class="tag">交流畅顺</div>
+                    <div id="tagFour" class="tag">资源丰富</div>
+                    <div id="tagFive" class="tag">信息传递高效</div>
+                    <div id="tagSix" class="tag">数据信息充分</div>
+                </div>
+
+                <textarea id="commentArea" name="commentArea" placeholder="请输入评价内容（140字以内），以便研究员更好的为您服务。"></textarea>
+
+                <div class="anonymous">
+                    <img id="selectButton" src="unselected.png" alt="unselected" onclick="setAnonymous()">
+                    <span class="selectLabel">是否匿名</span>
+                </div>
+
+                <div class="submitButton">
+                    <button onclick="">提交</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showCommentWin() {
+            document.getElementById("writeComment").classList.remove("hidden");
+        }
+
+        function hideCommentWin() {
+            document.getElementById("writeComment").classList.add("hidden");
+        }
+
+        function setAnonymous() {
+            if ( document.getElementById("selectButton").alt === "unselected") {
+                document.getElementById("selectButton").src = "selected.png";
+                document.getElementById("selectButton").alt = "selected";
+            } else {
+                document.getElementById("selectButton").src = "unselected.png";
+                document.getElementById("selectButton").alt = "unselected";
+            }
+        }
+
+        function chooseTags(e) {
+            console.log(e);
+            console.log(e.target);
+            console.log(e.currentTarget);
+        }
+    </script>
+</body>
+</html>
