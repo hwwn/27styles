@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83f88dbe-87be-4e30-a41e-befef8840018" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/writeComment/selectedTag.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guanlian/adsTag.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/writeComment/writeComment.html" beforeDir="false" afterPath="$PROJECT_DIR$/writeComment/writeComment.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guanlian/guanlian.html" beforeDir="false" afterPath="$PROJECT_DIR$/guanlian/guanlian.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -17,7 +17,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.42283052">
+    <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf>
           <file leaf-file-name="comments.html" pinned="false" current-in-tab="false">
@@ -29,11 +29,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="guanlian.html" pinned="false" current-in-tab="false">
+          <file leaf-file-name="guanlian.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/guanlian/guanlian.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="384">
-                  <caret line="383" column="7" lean-forward="true" selection-start-line="383" selection-start-column="7" selection-end-line="383" selection-end-column="7" />
+                <state relative-caret-position="485">
+                  <caret line="383" column="24" lean-forward="true" selection-start-line="383" selection-start-column="24" selection-end-line="383" selection-end-column="24" />
                   <folding>
                     <element signature="e#10399#10405#0" expanded="true" />
                     <element signature="e#10406#10412#0" expanded="true" />
@@ -53,7 +53,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="writeComment.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="writeComment.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/writeComment/writeComment.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="439">
@@ -66,11 +66,11 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="writeComment.html" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/writeComment/writeComment.html">
+          <file leaf-file-name="guanlian.html" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/guanlian/guanlian.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="575">
-                  <caret line="329" column="50" selection-start-line="329" selection-start-column="50" selection-end-line="329" selection-end-column="50" />
+                <state relative-caret-position="360">
+                  <caret line="234" column="18" selection-start-line="234" selection-start-column="18" selection-end-line="234" selection-end-column="18" />
                 </state>
               </provider>
             </entry>
@@ -112,6 +112,7 @@
         <option value="$PROJECT_DIR$/shareWeChat.html" />
         <option value="$PROJECT_DIR$/shareWeChat/shareWeChat.html" />
         <option value="$PROJECT_DIR$/writeComment/writeComment.html" />
+        <option value="$PROJECT_DIR$/guanlian/guanlian.html" />
       </list>
     </option>
   </component>
@@ -145,6 +146,11 @@
             <path>
               <item name="27styles" type="b2602c69:ProjectViewProjectNode" />
               <item name="27styles" type="462c0819:PsiDirectoryNode" />
+              <item name="guanlian" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="27styles" type="b2602c69:ProjectViewProjectNode" />
+              <item name="27styles" type="462c0819:PsiDirectoryNode" />
               <item name="writeComment" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -171,6 +177,7 @@
       <recent name="C:\Users\hwwn\Desktop\27styles\shareWeChat" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\hwwn\Desktop\27styles\guanlian" />
       <recent name="C:\Users\hwwn\Desktop\27styles\writeComment" />
       <recent name="C:\Users\hwwn\Desktop\27styles" />
     </key>
@@ -197,12 +204,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1525670627960</updated>
-      <workItem from="1525670629349" duration="52604000" />
+      <workItem from="1525670629349" duration="55848000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52604000" />
+    <option name="totallyTimeSpent" value="55848000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -270,26 +277,6 @@
     <entry file="file://$PROJECT_DIR$/writeComment/starGrey.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/guanlian/guanlian.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="383" column="7" lean-forward="true" selection-start-line="383" selection-start-column="7" selection-end-line="383" selection-end-column="7" />
-          <folding>
-            <element signature="e#10399#10405#0" expanded="true" />
-            <element signature="e#10406#10412#0" expanded="true" />
-            <element signature="e#10930#10936#0" expanded="true" />
-            <element signature="e#10937#10943#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shareWeChat/shareWeChat.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="65">
-          <caret line="175" column="14" lean-forward="true" selection-start-line="173" selection-start-column="8" selection-end-line="175" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/writeComment/unselected.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -300,6 +287,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="439">
           <caret line="174" column="40" selection-start-line="174" selection-start-column="40" selection-end-line="174" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shareWeChat/shareWeChat.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="65">
+          <caret line="175" column="14" lean-forward="true" selection-start-line="173" selection-start-column="8" selection-end-line="175" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/guanlian/adsTag.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/guanlian/guanlian.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="234" column="18" selection-start-line="234" selection-start-column="18" selection-end-line="234" selection-end-column="18" />
         </state>
       </provider>
     </entry>
