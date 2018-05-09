@@ -167,15 +167,13 @@
             background: #A50014;
         }
 
+        /* add class */
         .selectedTag {
-            border: 1px solid #EBEBEB;
-            border-radius: 2px;
-            background: #EBEBEB;
-            font-size: 14px;
-            color: #333;
-            letter-spacing: 0;
-            line-height: 33px;
-            text-align: center;
+            border: 1px solid #EBEBEB!important;
+            background: url("selectedTag.png");
+            background-size: 20px 16px;
+            background-repeat: no-repeat;
+            background-color: #EBEBEB!important;
         }
         .hidden {
             display: none!important;
@@ -195,17 +193,17 @@
 
             <div class="mainPart">
                 <div id="starBar">
-                    <img class="starImg" src="starYellow.png" alt="starOne">
-                    <img class="starImg" src="starYellow.png" alt="starTwo">
-                    <img class="starImg" src="starYellow.png" alt="starThree">
-                    <img class="starImg" src="starYellow.png" alt="starFour">
-                    <img class="starImg" src="starYellow.png" alt="starFive">
+                    <img class="starImg" src="starYellow.png" alt="0">
+                    <img class="starImg" src="starYellow.png" alt="1">
+                    <img class="starImg" src="starYellow.png" alt="2">
+                    <img class="starImg" src="starYellow.png" alt="3">
+                    <img class="starImg" src="starYellow.png" alt="4">
                     <span id="note">10分</span>
                 </div>
 
                 <span id="redComment">非常满意，无可挑剔</span>
 
-                <div id="tags" onclick="chooseTags()">
+                <div id="tags">
                     <div id="tagOne" class="tag">信息活动及时</div>
                     <div id="tagTwo" class="tag">交流畅顺</div>
                     <div id="tagThree" class="tag">交流畅顺</div>
@@ -229,6 +227,8 @@
     </div>
 
     <script>
+
+        // 隐藏和显示
         function showCommentWin() {
             document.getElementById("writeComment").classList.remove("hidden");
         }
@@ -247,11 +247,89 @@
             }
         }
 
-        function chooseTags(e) {
-            console.log(e);
-            console.log(e.target);
-            console.log(e.currentTarget);
-        }
+        // 星星滑动
+        document.getElementById("starBar").addEventListener("touchmove", function (e) {
+            e.preventDefault();
+            let touch = e.touches[0];
+            let x = parseInt(touch.pageX);
+            let y = parseInt(touch.pageY);
+
+            if ( y >= document.getElementById("starBar").offsetTop && y <= document.getElementById("starBar").offsetTop + 23 ) {
+                if ( x >= document.getElementsByClassName("starImg")[0].offsetLeft + 35 && x <= document.getElementsByClassName("starImg")[0].offsetLeft + 35 + 12 ) {
+
+                }
+            }
+        });
+
+        // 星星点击
+        document.getElementById("starBar").addEventListener("click", function (e) {
+
+            e.preventDefault();
+
+            let starNum = e.target.alt;
+            let starSrc = e.target.src ? e.target.src.split("/").pop() : '';
+            let starArr = document.getElementsByClassName("starImg");
+
+            for ( let i = 0; i < starArr.length; i++) {
+                if (i < starNum) {
+                    starArr[i].src = "starYellow.png";
+                } else if ( i > starNum) {
+                    starArr[i].src = "starGrey.png";
+                } else if ( i == starNum) {
+                    if (starSrc === "starYellow.png") {
+                        e.target.src = e.target.src.replace("starYellow", "starHalf");
+                    } else if (starSrc === "starGrey.png") {
+                        e.target.src = e.target.src.replace("starGrey", "starHalf");
+                    } else {
+                        e.target.src = e.target.src.replace("starHalf", "starYellow");
+                    }
+                }
+
+                let redComment =  ["非常不满意，各方面都很差", "不满意，比较差", "一般，需要改善", "比较满意，但仍可改善", "非常满意，无可挑剔"];
+                if (starNum == 0) {
+                    document.getElementById("redComment").innerText = redComment[0];
+                    if (starSrc !== "starHalf.png") {
+                        document.getElementById("note").innerText = "1分"
+                    } else {
+                        document.getElementById("note").innerText = "2分"
+                    }
+                } else if (starNum == 1) {
+                    document.getElementById("redComment").innerText = redComment[1];
+                    if (starSrc !== "starHalf.png") {
+                        document.getElementById("note").innerText = "3分"
+                    } else {
+                        document.getElementById("note").innerText = "4分"
+                    }
+                } else if (starNum == 2) {
+                    document.getElementById("redComment").innerText = redComment[2];
+                    if (starSrc !== "starHalf.png") {
+                        document.getElementById("note").innerText = "5分"
+                    } else {
+                        document.getElementById("note").innerText = "6分"
+                    }
+                } else if (starNum == 3) {
+                    document.getElementById("redComment").innerText = redComment[3];
+                    if (starSrc !== "starHalf.png") {
+                        document.getElementById("note").innerText = "7分"
+                    } else {
+                        document.getElementById("note").innerText = "8分"
+                    }
+                } else {
+                    document.getElementById("redComment").innerText = redComment[4];
+                    if (starSrc !== "starHalf.png") {
+                        document.getElementById("note").innerText = "9分"
+                    } else {
+                        document.getElementById("note").innerText = "10分"
+                    }
+                }
+            }
+        });
+
+        // 标签 点击
+        document.getElementById("tags").addEventListener("click", function (e) {
+            e.target.classList.add("selectedTag");
+        })
+
     </script>
 </body>
 </html>

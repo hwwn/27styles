@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83f88dbe-87be-4e30-a41e-befef8840018" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/writeComment/closeWindow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/writeComment/selected.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/writeComment/starGrey.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/writeComment/starHalf.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/writeComment/starYellow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/writeComment/unselected.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/writeComment/writeComment.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/writeComment/selectedTag.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shareWeChat/shareWeChat.html" beforeDir="false" afterPath="$PROJECT_DIR$/shareWeChat/shareWeChat.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/writeComment/writeComment.html" beforeDir="false" afterPath="$PROJECT_DIR$/writeComment/writeComment.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -23,7 +17,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.3931925">
+    <splitter split-orientation="horizontal" split-proportion="0.42283052">
       <split-first>
         <leaf>
           <file leaf-file-name="comments.html" pinned="false" current-in-tab="false">
@@ -50,11 +44,20 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="shareWeChat.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="shareWeChat.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/shareWeChat/shareWeChat.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-51">
+                <state relative-caret-position="65">
                   <caret line="175" column="14" lean-forward="true" selection-start-line="173" selection-start-column="8" selection-end-line="175" selection-end-column="14" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="writeComment.html" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/writeComment/writeComment.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="439">
+                  <caret line="174" column="40" selection-start-line="174" selection-start-column="40" selection-end-line="174" selection-end-column="40" />
                 </state>
               </provider>
             </entry>
@@ -66,8 +69,8 @@
           <file leaf-file-name="writeComment.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/writeComment/writeComment.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="159">
-                  <caret line="207" column="51" lean-forward="true" selection-start-line="207" selection-start-column="51" selection-end-line="207" selection-end-column="51" />
+                <state relative-caret-position="575">
+                  <caret line="329" column="50" selection-start-line="329" selection-start-column="50" selection-end-line="329" selection-end-column="50" />
                 </state>
               </provider>
             </entry>
@@ -194,25 +197,25 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1525670627960</updated>
-      <workItem from="1525670629349" duration="34529000" />
+      <workItem from="1525670629349" duration="52604000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34529000" />
+    <option name="totallyTimeSpent" value="52604000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.101739585" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.09488666" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" weight="0.32901832" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.22330096" />
+      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.13052858" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -282,7 +285,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/shareWeChat/shareWeChat.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-51">
+        <state relative-caret-position="65">
           <caret line="175" column="14" lean-forward="true" selection-start-line="173" selection-start-column="8" selection-end-line="175" selection-end-column="14" />
         </state>
       </provider>
@@ -295,8 +298,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/writeComment/writeComment.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="207" column="51" lean-forward="true" selection-start-line="207" selection-start-column="51" selection-end-line="207" selection-end-column="51" />
+        <state relative-caret-position="439">
+          <caret line="174" column="40" selection-start-line="174" selection-start-column="40" selection-end-line="174" selection-end-column="40" />
         </state>
       </provider>
     </entry>
