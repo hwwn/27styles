@@ -12,29 +12,31 @@
         /* menuBar */
         #related .menuBar {
             padding: 0 18px;
-            width: 100%;
+            width: 100vw;
             height: 39px;
             border-bottom: 1px solid #EBEBEB;
-
-        }
-        #related .menuBar .slideBar {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: nowrap;
-
-            height: 100%;
+            box-sizing: border-box;
             overflow-x: scroll;
             overflow-y: hidden;
         }
-        #related .menuBar .slideBar span {
-            width: auto;
-            float: left;
-            display: block;
-            padding-right: 25px;
+        #related .menuBar #slideBar {
+            height: 100%;
+            white-space: nowrap;
+        }
+        #related .menuBar #slideBar span {
+            margin-right: 25px;
+            padding-bottom: 6px;
             font-size: 16px;
             color: #333333;
             letter-spacing: 0;
             line-height: 39px;
+        }
+        #related .menuBar #slideBar span:last-child {
+            margin-right: 0;
+        }
+        .selectMenu {
+            font-weight: 600;
+            border-bottom: 3px solid #A50014;;
         }
         /* guess */
         #related .guess {
@@ -248,8 +250,9 @@
         #related .transfer {
             display: flex;
             padding: 15px 18px;
-            height: 95px;
+            height: 112px;
             border-bottom: 1px solid #EBEBEB;
+            box-sizing: border-box;
         }
         #related .transfer .author {
             width: 50px;
@@ -281,9 +284,57 @@
         }
         #related .transfer .midBorder {
             margin: 0 15px;
-            height: 100%;
+            height: 85px;
             border-right: 1px solid #EBEBEB;
         }
+        #related .transfer .detail .detailInfo {
+            height: 15px;
+        }
+        #related .transfer .detail .detailInfo #arrow {
+            width: 15px;
+        }
+        #related .transfer .detail .detailInfo .green {
+            display: inline-block;
+            width: 64%;
+            font-size: 13px;
+            color: #4FC071;
+            letter-spacing: 0;
+            line-height: 13px;
+        }
+        #related .transfer .detail .detailInfo .green #status {
+            margin-right: 4px;
+            padding: 1px 2px;
+            border-radius: 2px;
+            background-color: #4FC071;
+            color: white;
+            line-height: 13px;
+        }
+        #related .transfer .detail .detailInfo .red {
+            display: inline-block;
+            width: 64%;
+            font-size: 13px;
+            color: #A50014;
+            letter-spacing: 0;
+            line-height: 13px;
+        }
+        #related .transfer .detail .detailInfo .red #status {
+            margin-right: 4px;
+            padding: 1px 2px;
+            border-radius: 2px;
+            background-color: #A50014;
+            color: white;
+            line-height: 13px;
+        }
+        #related .transfer .detail .detailInfo #action {
+            display: inline-block;
+            width: 34%;
+            font-size: 12px;
+            color: #5881B2;
+            letter-spacing: 0;
+            line-height: 13px;
+            text-align: right;
+        }
+
         #related .transfer .detail .detailContent {
             display: -webkit-box;
             margin: 11px 0 7px 0;
@@ -298,16 +349,32 @@
             -webkit-line-clamp: 2;
             -webkit-box-orient: vertical;
         }
+        #related .transfer .detail .detailDate {
+            display: flex;
+            font-size: 12px;
+            color: #999999;
+            letter-spacing: 0;
+            line-height: 12px;
+        }
+        #related .transfer .detail .detailDate .date {
+            flex: 1;
+            text-align: left;
+        }
+        #related .transfer .detail .detailDate .price {
+            flex: 1;
+            text-align: right;
+        }
         /* report */
         #related .report {
             display: block;
             padding: 15px 18px;
-            height: 118px;
+            height: 115px;
             border-bottom: 1px solid #EBEBEB;
+            box-sizing: border-box;
         }
         #related .report p {
             display: -webkit-box;
-            margin: 0 0 15px 0;
+            margin: 0 0 6px 0;
             width: 100%;
             height: 40px;
             font-size: 14px;
@@ -323,11 +390,11 @@
             font-size: 12px;
             color: #666666;
             letter-spacing: 0;
-            line-height: 13px;
+            line-height: 12px;
         }
         #related .report .date {
             display: block;
-            margin-top: 7px;
+            margin-top: 6px;
             font-size: 11px;
             color: #4A4A4A;
             letter-spacing: 0;
@@ -341,20 +408,20 @@
 <body>
     <div id="related">
         <div class="menuBar">
-            <div class="slideBar">
-                <span>推荐</span>
-                <span>调仓</span>
-                <span>研报</span>
-                <span>金点评</span>
-                <span>电话会议</span>
-                <span>活动</span>
-                <span>推荐</span>
-                <span>调仓</span>
-                <span>研报</span>
-                <span>金点评</span>
-                <span>电话会议</span>
-                <span>活动</span>
-            </div>
+            <span id="slideBar">
+                <span class="menu selectMenu">推荐</span>
+                <span class="menu">调仓</span>
+                <span class="menu">研报</span>
+                <span class="menu">金点评</span>
+                <span class="menu">电话会议</span>
+                <span class="menu">活动</span>
+                <span class="menu">推荐</span>
+                <span class="menu">调仓</span>
+                <span class="menu">研报</span>
+                <span class="menu">金点评</span>
+                <span class="menu">电话会议</span>
+                <span class="menu">活动</span>
+            </span>
         </div>
 
         <!--/* guess */-->
@@ -412,10 +479,24 @@
             <div class="midBorder"></div>
 
             <div class="detail">
-                <div></div>
+                <div class="detailInfo">
+                    <div class="green">
+                        <span id="status">卖出</span>
+                        <span>31.47%</span>
+                        <img id="arrow" src="greenArrow.png" alt="arrow">
+                        <span>39.47%</span>
+                    </div>
+                    <div id="action">
+                        <span>低估股票掘金</span>
+                    </div>
+                </div>
                 <p class="detailContent">
                     理由：该股票连续10天占组合总资产的比重高于30%，出发系统自动调仓该股票连续10天占组合总资产的比重高于30%，出发系统自动调仓
                 </p>
+                <div class="detailDate">
+                    <span class="date">2017/01/03 16:38</span>
+                    <span class="price">成交价：412.401HKD</span>
+                </div>
             </div>
 
         </div>
@@ -423,10 +504,19 @@
         <!--/* report  */-->
         <div class="report">
             <p>「中泰服饰」歌力思 | 年报点评：业绩超预期，主品牌恢复增长、EdHardy爆发难挡》「中泰服饰」歌力思 | 年报点评：业绩超预期，主品牌恢复增长、EdHardy爆发难挡》</p>
-            <span class="tag">相关股票</span><span class="tag">&nbsp;|&nbsp;</span><span class="tag">歌力思</span>
+            <span class="tag">
+                <span>相关股票</span><span>&nbsp;|&nbsp;</span><span>歌力思</span>
+            </span>
             <span class="date">18/03/30  16:40 <span class="tags">评级</span><span>&nbsp;|&nbsp;</span><span>买入</span></span>
         </div>
     </div>
-
+    <script>
+        document.getElementById("slideBar").addEventListener("click", function (e) {
+            if (e.target.classList !== undefined && e.target.id !== "slideBar" ) {
+                document.getElementsByClassName("selectMenu")[0].classList.remove("selectMenu");
+                e.target.classList.add("selectMenu");
+            }
+        })
+    </script>
 </body>
 </html>
