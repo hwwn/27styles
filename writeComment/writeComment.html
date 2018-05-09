@@ -327,7 +327,9 @@
 
         // 标签 点击
         document.getElementById("tags").addEventListener("click", function (e) {
-            e.target.classList.add("selectedTag");
+            if (e.target.id !== "tags") {
+                e.target.classList.add("selectedTag");
+            }
         })
 
     </script>
