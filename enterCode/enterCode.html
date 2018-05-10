@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Title</title>
+    <style type="text/css">
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        #enterCode {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            align-items: center;
+            align-content: center;
+            padding: 0 37px;
+            background-color: rgba(0, 0, 0, .7);
+        }
+        #enterCode #codeWindow {
+            position: relative;
+            display: block;
+            padding: 25px;
+            width: 100%;
+            height: 265px;
+            border-radius: 5px;
+            background-color: white;
+            box-sizing: border-box;
+        }
+        #enterCode #codeWindow .codeTitle {
+            display: block;
+            font-size: 16px;
+            color: #333333;
+            letter-spacing: 0;
+            line-height: 20px;
+            text-align: center;
+        }
+        #enterCode #codeWindow .codeInput {
+            margin-top: 15px;
+            padding: 0 50px;
+            width: 100%;
+            height: 35px;
+            border: 1px solid #999999;
+            border-radius: 4px;
+            outline: none;
+            box-sizing: border-box;
+            font-size: 15px;
+            color: #333333;
+        }
+        #enterCode #codeWindow .codeButton {
+            margin-top: 50px;
+            width: 100%;
+            height: 35px;
+            font-size: 15px;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            background: #A50014;
+            outline: none;
+        }
+        #enterCode #codeWindow .describe {
+            margin-top: 5px;
+            display: block;
+            font-size: 11px;
+            color: #999999;
+            letter-spacing: 0;
+            text-align: center;
+            line-height: 15px;
+        }
+        #enterCode #codeWindow .connect {
+            margin-top: 20px;
+            display: block;
+            font-size: 14px;
+            color: #5881B2;
+            letter-spacing: 0;
+            text-align: center;
+            line-height: 20px;
+        }
+        #enterCode #codeWindow .codeIcon {
+            position: absolute;
+            top: 67px;
+            left: 36px;
+            width: 15px;
+        }
+        #enterCode #codeWindow .codeAlert {
+            position: absolute;
+            display: block;
+            width: calc(100% - 50px);
+            top: 100px;
+            font-size: 11px;
+            color: #999999;
+            letter-spacing: 0;
+            text-align: center;
+            line-height: 11px;
+        }
+    </style>
+</head>
+<body>
+    <div id="enterCode">
+        <div id="codeWindow">
+            <span class="codeTitle">请输入参会码</span>
+            <input class="codeInput" type="text">
+            <img class="codeIcon" src="codeGrey.png" alt="codeGrey">
+            <span class="codeAlert">参会码错误，请重新输入</span>
+            <button class="codeButton">确认</button>
+            <span class="describe">本会议对公司客户开放 </span>
+            <span class="connect">联系对口销售</span>
+
+        </div>
+    </div>
+</body>
+</html>
