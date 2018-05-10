@@ -247,11 +247,13 @@
             z-index: 10;
         }
         /* transfer */
-        #related .transfer {
-            display: flex;
+        #related #transfer {
             padding: 15px 18px;
-            height: 112px;
             border-bottom: 1px solid #EBEBEB;
+        }
+        #related .transfer {
+            position: relative;
+            display: flex;
             box-sizing: border-box;
         }
         #related .transfer .author {
@@ -364,12 +366,34 @@
             flex: 1;
             text-align: right;
         }
+        /**/
+        #related  #transfer .bottomPart {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 10px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        #related #transfer .bottomPart .tag {
+            padding: 2px 10px;
+            background: rgba(255,151,59,0.20);
+            border-radius: 2px;
+            font-size: 11px;
+            color: #FF973B;
+            letter-spacing: 0;
+        }
+        #related #transfer .bottomPart .close {
+            width: 27px;
+            height: 15px;
+        }
         /* report */
+        #related #report {
+            padding: 15px 18px;
+            border-bottom: 1px solid #EBEBEB;
+        }
         #related .report {
             display: block;
-            padding: 15px 18px;
-            height: 115px;
-            border-bottom: 1px solid #EBEBEB;
             box-sizing: border-box;
         }
         #related .report p {
@@ -402,6 +426,32 @@
         }
         #related .report .date .tags {
             margin-left: 25px;
+        }
+        /**/
+        #related  #report .bottomPart {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 10px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        #related #report .bottomPart .tag {
+            padding: 2px 10px;
+            background: rgba(255,151,59,0.20);
+            border-radius: 2px;
+            font-size: 11px;
+            color: #FF973B;
+            letter-spacing: 0;
+        }
+        #related #report .bottomPart .close {
+            width: 27px;
+            height: 15px;
+        }
+
+        /*  global */
+        .hidden {
+            display: none;
         }
     </style>
 </head>
@@ -469,46 +519,65 @@
         </div>
 
         <!--/* Transfer  */-->
-        <div class="transfer">
-            <div class="author">
-                <img class="headImg" src="" alt="">
-                <div class="name">小张震</div>
-                <div class="company">光大证券</div>
-            </div>
+        <div id="transfer">
+            <div class="transfer">
+                <div class="author">
+                    <img class="headImg" src="" alt="">
+                    <div class="name">小张震</div>
+                    <div class="company">光大证券</div>
+                </div>
 
-            <div class="midBorder"></div>
+                <div class="midBorder"></div>
 
-            <div class="detail">
-                <div class="detailInfo">
-                    <div class="green">
-                        <span id="status">卖出</span>
-                        <span>31.47%</span>
-                        <img id="arrow" src="greenArrow.png" alt="arrow">
-                        <span>39.47%</span>
+                <div class="detail">
+                    <div class="detailInfo">
+                        <div class="green">
+                            <span id="status">卖出</span>
+                            <span>31.47%</span>
+                            <img id="arrow" src="greenArrow.png" alt="arrow">
+                            <span>39.47%</span>
+                        </div>
+                        <div id="action">
+                            <span>低估股票掘金</span>
+                        </div>
                     </div>
-                    <div id="action">
-                        <span>低估股票掘金</span>
+                    <p class="detailContent">
+                        理由：该股票连续10天占组合总资产的比重高于30%，出发系统自动调仓该股票连续10天占组合总资产的比重高于30%，出发系统自动调仓
+                    </p>
+                    <div class="detailDate">
+                        <span class="date">2017/01/03 16:38</span>
+                        <span class="price">成交价：412.401HKD</span>
                     </div>
                 </div>
-                <p class="detailContent">
-                    理由：该股票连续10天占组合总资产的比重高于30%，出发系统自动调仓该股票连续10天占组合总资产的比重高于30%，出发系统自动调仓
-                </p>
-                <div class="detailDate">
-                    <span class="date">2017/01/03 16:38</span>
-                    <span class="price">成交价：412.401HKD</span>
-                </div>
             </div>
 
+            <div class="bottomPart">
+                <span class="tag">
+                    近期热点
+                </span>
+                <img class="close" src="close.png" alt="close">
+            </div>
         </div>
+
 
         <!--/* report  */-->
-        <div class="report">
-            <p>「中泰服饰」歌力思 | 年报点评：业绩超预期，主品牌恢复增长、EdHardy爆发难挡》「中泰服饰」歌力思 | 年报点评：业绩超预期，主品牌恢复增长、EdHardy爆发难挡》</p>
-            <span class="tag">
+        <div id="report">
+            <div class="report">
+                <p>「中泰服饰」歌力思 | 年报点评：业绩超预期，主品牌恢复增长、EdHardy爆发难挡》「中泰服饰」歌力思 | 年报点评：业绩超预期，主品牌恢复增长、EdHardy爆发难挡》</p>
+                <span class="tag">
                 <span>相关股票</span><span>&nbsp;|&nbsp;</span><span>歌力思</span>
             </span>
-            <span class="date">18/03/30  16:40 <span class="tags">评级</span><span>&nbsp;|&nbsp;</span><span>买入</span></span>
+                <span class="date">18/03/30  16:40 <span class="tags">评级</span><span>&nbsp;|&nbsp;</span><span>买入</span></span>
+            </div>
+
+            <div class="bottomPart">
+                <span class="tag">
+                    近期热点
+                </span>
+                <img class="close" src="close.png" alt="close">
+            </div>
         </div>
+
     </div>
     <script>
         document.getElementById("slideBar").addEventListener("click", function (e) {
