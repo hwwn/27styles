@@ -448,10 +448,426 @@
             width: 27px;
             height: 15px;
         }
+        /* point */
+        #related #point {
+            padding: 15px 18px;
+            border-bottom: 1px solid #EBEBEB;
+        }
+        #related .point {
+            position: relative;
+            display: flex;
+            box-sizing: border-box;
+        }
+        #related .point .author {
+            margin-right: 15px;
+            width: 50px;
+        }
+        #related .point .author .headImg {
+            display: block;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #EBEBEB;
+        }
+        #related .point .author .name {
+            margin-top: 5px;
+            width: 50px;
+            font-size: 12px;
+            color: #333;
+            letter-spacing: 0;
+            text-align: center;
+            line-height: 13px;
+        }
+        #related .point .author .company {
+            margin-top: 3px;
+            width: 50px;
+            font-size: 12px;
+            color: #333;
+            letter-spacing: 0;
+            text-align: center;
+            line-height: 13px;
+        }
+        #related .point .detail {
+            width: 100%;
+        }
+        #related .point .detail .title {
+            margin-bottom: 10px;
+            display: -webkit-box;
+            font-size: 15px;
+            color: #333333;
+            letter-spacing: 0;
+            line-height: 20px;
+            overflow : hidden;
+            text-overflow: ellipsis;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+        }
+        #related .point .detail .title {
+            font-size: 14px;
+            color: #666666;
+            letter-spacing: 1px;
+            text-align: justify;
+            line-height: 20px;
+        }
+        #related .point .detail .radio {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 15px;
+            width: 100%;
+            height: 40px;
+            border-radius: 2px;
+            background: #EBEBEB;
+            box-sizing: border-box;
+        }
+        #related .point .detail .radio .playIcon {
+            height: 15px;
+        }
+        #related .point .detail .radio .progressBar {
+            width: calc(100% - 110px);
+            height: 1px;
+            background-color: #999;
+        }
+        #related .point .detail .radio .progressBar .circleIcon {
+            margin-top: -5px;
+            width: 10px;
+            height: 10px;
+            background-color: white;
+            border: 1px solid #666;
+            border-radius: 50%;
+        }
+        #related .point .detail .radio span {
+            font-size: 11px;
+            color: #666666;
+            letter-spacing: 0;
+            line-height: 11px;
+        }
+        #related .point .detail .content {
+            display: -webkit-box;
+            font-size: 14px;
+            color: #666666;
+            letter-spacing: 1px;
+            text-align: justify;
+            line-height: 20px;
+            overflow : hidden;
+            text-overflow: ellipsis;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+        }
+        #related .point .detail .tags {
+            display: flex;
+            margin-top: 10px;
+            justify-content: space-between;
+            font-size: 12px;
+            color: #999999;
+            letter-spacing: 0;
+            line-height: 15px;
+        }
+        /**/
+        #related  #point .bottomPart {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 10px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        #related #point .bottomPart .tag {
+            padding: 2px 10px;
+            background: rgba(255,151,59,0.20);
+            border-radius: 2px;
+            font-size: 11px;
+            color: #FF973B;
+            letter-spacing: 0;
+        }
+        #related #point .bottomPart .close {
+            width: 27px;
+            height: 15px;
+        }
+
+        /* activity */
+        #related #activity {
+            padding: 15px 18px;
+            border-bottom: 1px solid #EBEBEB;
+        }
+        #related .activity .tags{
+            display: flex;
+            justify-content: space-between;
+        }
+        #related .activity .tags .tagBlue {
+            padding: 2px 10px;
+            background-color: rgba(88,129,178,0.30);
+            border-radius: 2px;
+            font-size: 11px;
+            color: #5881B2;
+            letter-spacing: 0;
+            text-align: center;
+            line-height: 12px;
+        }
+        #related .activity .tags .tagGrey {
+            padding: 2px 10px;
+            background-color: #666;
+            border-radius: 2px;
+            font-size: 11px;
+            color: white;
+            letter-spacing: 0;
+            text-align: center;
+            line-height: 12px;
+        }
+        #related .activity .tags .location {
+            font-size: 12px;
+            color: #333333;
+            letter-spacing: 0;
+            text-align: right;
+            line-height: 12px;
+        }
+        #related .activity .content {
+            display: -webkit-box;
+            font-size: 14px;
+            color: #333333;
+            letter-spacing: 0;
+            line-height: 20px;
+            overflow : hidden;
+            text-overflow: ellipsis;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+        }
+        #related .activity .author {
+            display: block;
+            margin-top: 15px;
+            font-size: 12px;
+            color: #999999;
+            letter-spacing: 0;
+            line-height: 12px;
+        }
+        #related .activity .date {
+            display: block;
+            margin-top: 7px;
+            font-size: 12px;
+            color: #999999;
+            letter-spacing: 0;
+            line-height: 12px;
+        }
+        /**/
+        #related  #activity .bottomPart {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 10px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        #related #activity .bottomPart .tag {
+            padding: 2px 10px;
+            background: rgba(255,151,59,0.20);
+            border-radius: 2px;
+            font-size: 11px;
+            color: #FF973B;
+            letter-spacing: 0;
+        }
+        #related #activity .bottomPart .close {
+            width: 27px;
+            height: 15px;
+        }
+
+        /* combination */
+        #related #combination {
+            border-bottom: 1px solid #EBEBEB;
+        }
+        #related .combination .author {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid #EBEBEB;
+        }
+        #related .combination .author .headImg {
+            display: block;
+            margin: 15px 10px 15px 20px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #EBEBEB;
+        }
+        #related .combination .author .rightPart {
+            width: calc(100% - 80px);
+        }
+        #related .combination .author .rightPart .tags {
+            display: block;
+            height: 20px;
+            font-size: 10px;
+            color: #FFFFFF;
+            letter-spacing: 0;
+            line-height: 10px;
+            text-align: right;
+        }
+        #related .combination .author .rightPart .tags span {
+            display: inline-block;
+            padding: 5px 20px;
+            border-radius: 0 0 5px 5px;
+            background-color: #A50014;
+            box-sizing: border-box;
+            box-shadow: 1px 1px 2px 0
+        }
+        #related .combination .author .rightPart .title {
+            display: block;
+            font-size: 15px;
+            color: #333333;
+            letter-spacing: 0;
+            line-height: 17px;
+        }
+        #related .combination .author .rightPart .company {
+            display: inline-block;
+            margin-right: 20px;
+            font-size: 12px;
+            color: #333333;
+            letter-spacing: 0;
+            line-height: 13px;
+        }
+        #related .combination .author .rightPart .author {
+            display: inline-block;
+            margin-top: 7px;
+            font-size: 12px;
+            color: #333333;
+            letter-spacing: 0;
+            line-height: 13px;
+        }
+        #related .combination .tableLabel {
+            width: 100%;
+        }
+        #related .combination .tableLabel .tableRow {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 25px;
+            border-bottom: 1px solid rgba(235, 235, 235, .5);
+            font-size: 12px;
+            color: #333333;
+            letter-spacing: 0;
+            line-height: 13px;
+        }
+        #related .combination .tableLabel .tableRow .tableCell {
+            flex: 1;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 20px;
+        }
+        #related .combination .tableLabel .tableRow .tableCell .greenNum {
+            color: #4FC071!important;
+        }
+        #related .combination .tableLabel .tableRow .tableCell .redNum {
+            color: #A50014!important;
+        }
+        #related .combination .tableLabel .tableRowBottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            width: 100%;
+            height: 25px;
+            border-bottom: 1px solid rgba(235, 235, 235, .5);
+            font-size: 12px;
+            color: #999999;
+            letter-spacing: 0;
+            line-height: 13px;
+            box-sizing: border-box;
+        }
+        /**/
+        #related  #combination .bottomPart {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 10px;
+            padding: 0 18px 15px 18px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        #related #combination .bottomPart .tag {
+            padding: 2px 10px;
+            background: rgba(255,151,59,0.20);
+            border-radius: 2px;
+            font-size: 11px;
+            color: #FF973B;
+            letter-spacing: 0;
+        }
+        #related #combination .bottomPart .close {
+            width: 27px;
+            height: 15px;
+        }
+        /* morningMeeting */
+        #related #morningMeeting {
+            padding: 15px 18px;
+            border-bottom: 1px solid #EBEBEB;
+        }
+        #related .morningMeeting {
+            display: flex;
+        }
+        #related .morningMeeting .headImg {
+            display: block;
+            margin-right: 10px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #EBEBEB;
+        }
+        #related .morningMeeting .content {
+            display: -webkit-box;
+            margin-right: 20px;
+            width: calc(100% - 110px);
+            font-size: 14px;
+            color: #333333;
+            letter-spacing: 2px;
+            text-align: justify;
+            overflow : hidden;
+            text-overflow: ellipsis;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+        }
+        #related .morningMeeting .rightPart {
+            width: 24px;
+        }
+        #related .morningMeeting .rightPart .date {
+            font-size: 12px;
+            color: #333333;
+            letter-spacing: 0;
+        }
+        #related .morningMeeting .rightPart .playIcon {
+            display: block;
+            margin-top: 10px;
+            width: 20px;
+            height: 20px;
+        }
+        #related .time {
+            margin: 7px 0 0 78px;
+            display: block;
+            font-size: 12px;
+            color: #999999;
+            letter-spacing: 0;
+            line-height: 13px;
+        }
+            /**/
+        #related  #morningMeeting .bottomPart {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 10px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        #related #morningMeeting .bottomPart .tag {
+            padding: 2px 10px;
+            background: rgba(255,151,59,0.20);
+            border-radius: 2px;
+            font-size: 11px;
+            color: #FF973B;
+            letter-spacing: 0;
+        }
+        #related #morningMeeting .bottomPart .close {
+            width: 27px;
+            height: 15px;
+        }
 
         /*  global */
         .hidden {
-            display: none;
+            display: none!important;
         }
     </style>
 </head>
@@ -560,7 +976,7 @@
         </div>
 
 
-        <!--/* report  */-->
+        <!--/* report */-->
         <div id="report">
             <div class="report">
                 <p>「中泰服饰」歌力思 | 年报点评：业绩超预期，主品牌恢复增长、EdHardy爆发难挡》「中泰服饰」歌力思 | 年报点评：业绩超预期，主品牌恢复增长、EdHardy爆发难挡》</p>
@@ -578,7 +994,179 @@
             </div>
         </div>
 
+        <!--/* point */-->
+        <div id="point">
+            <div class="point">
+                <div class="author">
+                    <img class="headImg" src="" alt="">
+                    <div class="name">小张震</div>
+                    <div class="company">光大证券</div>
+                </div>
+                <div class="detail">
+                    <span class="title">《安信研究4月金股组合》</span>
+
+                    <div class="radio">
+                        <img class="playIcon" src="playIcon.png" alt="playIcon">
+                        <span class="">00:00</span>
+                        <div class="progressBar">
+                            <div class="circleIcon"></div>
+                        </div>
+                        <span>10:32</span>
+                    </div>
+
+                    <span class="content hidden">
+                        事件：在商业招商连超预期及《深化粤港澳合作推进大湾区建设框剪协议》签署的共同刺激下，我们坚定的事件：在商业招商连超预期及《深化粤港澳合作推进大湾区建设框剪协议》签署的共同刺激下，我们坚定的…
+                    </span>
+
+                    <div class="tags">
+                        <div>
+                            <span>相关标的：</span>
+                            <span>泸州老窖</span>
+                        </div>
+                        <div>
+                            <span>2018/04/03</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="bottomPart">
+                <span class="tag">
+                    近期热点
+                </span>
+                <img class="close" src="close.png" alt="close">
+            </div>
+        </div>
+
+        <!--/* activity */-->
+        <div id="activity">
+            <div class="activity">
+                <div class="tags">
+                    <div>
+                        <span class="tagBlue">调研</span>
+                        <span class="tagGrey">已结束</span>
+                    </div>
+                    <div>
+                        <span class="location">北京</span>
+                    </div>
+                </div>
+
+                <p class="content">
+                    新能源汽产产业链之四十电话会议：万国电车近期新能源热点新能源汽产产业链之四十电话会议：万国电车近期新能源热点…
+                </p>
+
+                <span class="author">马晓天、陈天文、章志</span>
+                <span class="date">2018/01/03 16:38</span>
+            </div>
+
+            <div class="bottomPart">
+                <span class="tag">
+                    近期热点
+                </span>
+                <img class="close" src="close.png" alt="close">
+            </div>
+        </div>
+
+        <!-- /* combination */ -->
+        <div id="combination">
+            <div class="combination">
+                <div>
+                    <div class="author">
+                        <img class="headImg" src="" alt="">
+                        <div class="rightPart">
+                            <div class="tags">
+                                <span>独家</span>
+                                <span>汽车</span>
+                            </div>
+                            <span class="title">《天空一阵闪亮》</span>
+                            <span class="company">美市管理员</span>
+                            <span class="author"> 周卫</span>
+                        </div>
+                    </div>
+
+                    <div class="tableLabel">
+
+                        <div class="tableRow">
+                            <div class="tableCell">
+                                <span>今年以来</span>
+                                <span class="greenNum">-0.41%</span>
+                            </div>
+                            <div class="tableCell">
+                                <span>今年来超额</span>
+                                <span class="greenNum">-4.96%</span>
+                            </div>
+                        </div>
+
+                        <div class="tableRow">
+                            <div class="tableCell">
+                                <span>累计收益</span>
+                                <span class="greenNum">-0.41%</span>
+                            </div>
+                            <div class="tableCell">
+                                <span>超额收益</span>
+                                <span class="greenNum">-4.96%</span>
+                            </div>
+                        </div>
+
+                        <div class="tableRow">
+                            <div class="tableCell">
+                                <span>日收益</span>
+                                <span class="greenNum">-0.41%</span>
+                            </div>
+                            <div class="tableCell">
+                                <span>近一周</span>
+                                <span class="redNum">4.96%</span>
+                            </div>
+                        </div>
+
+                        <div class="tableRowBottom">
+                            <span>订阅数： 0</span>
+                            <span>阅读数： 0</span>
+                            <span>调仓时间： 2016/07/05</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="bottomPart">
+                <span class="tag">
+                    近期热点
+                </span>
+                <img class="close" src="close.png" alt="close">
+            </div>
+        </div>
+
+        <!-- /* morningMeeting */ -->
+        <div id="morningMeeting">
+            <div class="morningMeeting">
+                <img class="headImg" src="" alt="">
+                <span class="content">
+                    「天峰阅读晨报0510」「行业」钴、旅游综合、计算机、轻工「个股」中芯国际、格林美、苏交科「天峰阅读晨报0510」「行业」钴、旅游综合、计算机、轻工「个股」中芯国际、格林美、苏交科
+                </span>
+                <div class="rightPart">
+                    <span class="date">今天</span>
+                    <img class="playIcon" src="" alt="">
+                </div>
+            </div>
+
+            <div class="time">
+                04:07
+            </div>
+
+            <div class="bottomPart">
+                <span class="tag">
+                    近期热点
+                </span>
+                <img class="close" src="close.png" alt="close">
+            </div>
+
+        </div>
+
     </div>
+
+
     <script>
         document.getElementById("slideBar").addEventListener("click", function (e) {
             if (e.target.classList !== undefined && e.target.id !== "slideBar" ) {
